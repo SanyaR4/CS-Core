@@ -1,4 +1,38 @@
-<!-- Product-Section HTML Code STARTS -->
+<div class="topnav">
+    <input type="text" placeholder="Search..">
+  </div>
+  <!-- Control buttons -->
+<link href="search.css" rel="stylesheet">
+<script src="search.js"></script>
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('fav')"> Fruits and vegetables</button>
+    <button class="btn" onclick="filterSelection('sn')"> Snacks</button>
+    <button class="btn" onclick="filterSelection('bev')"> Beverages</button>
+    <button class="btn" onclick="filterSelection('fom')"> Food grains/oil and masalas</button>
+    <button class="btn" onclick="filterSelection('dairy')"> Dairy Products</button>
+  </div>
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="container">
+    <div class="filterDiv fav">Carrot</div>
+    <div class="filterDiv colors fav">Orange</div>
+    <div class="filterDiv fav">Apple</div>
+    <div class="filterDiv sn">Maggie</div>
+    <div class="filterDiv sn">Corn Flakes</div>
+    <div class="filterDiv sn">Biscuits</div>
+    <div class="filterDiv bev">Tea</div>
+    <div class="filterDiv bev">Coffee</div>
+    <div class="filterDiv bev">Green Tea</div>
+    <div class="filterDiv fom">Atta</div>
+    <div class="filterDiv fom">Basmati Rice</div>
+    <div class="filterDiv fom">Chilli Powder </div>
+    <div class="filterDiv fom">Coconut Oil</div>
+    <div class="filterDiv dairy">Milk</div>
+    <div class="filterDiv dairy">Curd</div>
+    <div class="filterDiv dairy">Cheese</div>
+  </div>
+  <!-- Product-Section HTML Code STARTS -->
 <link href="search.css" rel="stylesheet">
 <div class="width-100 margin-top-50">
     <div class="container">
